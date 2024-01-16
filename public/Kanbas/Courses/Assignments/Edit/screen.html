@@ -2,16 +2,6 @@
 <html>
 <head>
     <title>Edit Assignments</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 8px;
-            border: 1px solid black;
-        }
-    </style>
 </head>
 <body>
     <table>
@@ -21,11 +11,15 @@
                 <!-- BEGIN: Kanbas Navigation -->
                 <div class="kanbas-navigation">
                     <ul>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                        <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                        <li><a href="#">Messages</a></li>
+                        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+                        <li><a href="/Kanbas/Courses/Home/screen.html">Dashboard</a></li>
+                        <li><a href="/Kanbas/Courses/Assignments/screen.html">Courses</a></li>
+                        <li><a href="#">Calendar</a></li>
+                        <li><a href="#">Inbox</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Commons</a></li>
+                        <li><a href="#">Help</a></li>
                     </ul>
                 </div>
                 <!-- END: Kanbas Navigation -->
@@ -133,8 +127,8 @@
                         <input type="date" id="until" value="2021-01-01">
                         
                         <br/><br/>
-                        <button>Cancel</button>
-                        <button>Save</button>
+                        <form action="/Kanbas/Courses/Assignments/screen.html"><button type="submit">Cancel</button></form>
+                        <form action="/Kanbas/Courses/Assignments/screen.html"><button type="submit">Save</button></form>
                         </form>
                         
                         

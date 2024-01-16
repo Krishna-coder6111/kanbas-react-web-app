@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Edit Assignments</title>
+    <title>Edit Profile</title>
 </head>
 <body>
     <table> 
@@ -74,13 +74,16 @@
                     <button type="button">Add another link</button>
 
                     <div>
-                        <button type="button">Cancel</button>
-                        <button type="submit">Save Profile</button>
-                        <button type="button">Edit Profile</button>
-                        <button type="button">Cancel Editing</button>
+                        <form action="#"><button type="submit">Cancel</button></form>
+
+                        <form action="/Kanbas/Account/Profile/screen.html"><button type="submit">Save Profile</button></form>
+
+                        <form action="/Kanbas/Account/Profile/Edit/screen.html">
+                        <button type="submit">Edit Profile</button></form>
+
+                        <form action="/Kanbas/Account/Profile/screen.html"><button type="submit">Cancel Editing</button></form>
                     </div>
                 </form>
-
             </td>
         </tr>
     </table>
