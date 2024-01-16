@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Edit Profile</title>
+</head>
+<body>
+    <h1>Jose Annunziato</h1>
+    <form>
+        <label for="name">Name:*</label>
+        <input type="text" id="name" value="Jose Annunziato" required>
+
+        <label for="pronouns">Pronouns:</label>
+        <select id="pronouns">
+            <option value="none">None</option>
+            <option value="she">She/Her</option>
+            <option value="he">He/Him</option>
+            <option value="they">They/Them</option>
+            <option value="ze">Ze/Hir</option>
+        </select>
+
+        <label for="title">Title:</label>
+        <input type="text" id="title">
+
+        <h2>Contact</h2>
+        <p>No registered services, you can add some on the <a href="settings.html">settings page</a>.</p>
+        
+        <h2>Contact</h2>
+        <p>No registered services, you can add some on the <a href="settings.html">settings</a> page.</p>
+
+        <h2>Biography</h2>
+        <textarea id="biography">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+
+        <h2>Links</h2>
+        <ul>
+            <li>
+                <label for="youtube">YouTube</label>
+                <input type="url" id="youtube" value="https://www.youtube.com">
+                <button type="button">Remove</button>
+            </li>
+        </ul>
+        <button type="button">Add another link</button>
+
+        <div>
+            <button type="button">Cancel</button>
+            <button type="submit">Save Profile</button>
+            <button type="button">Edit Profile</button>
+            <button type="button">Cancel Editing</button>
+        </div>
+    </form>
+</body>
+</html>
