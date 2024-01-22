@@ -1,232 +1,228 @@
 <!-- BEGIN: Kanbas Navigation -->
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Grades</title>
-</head>
-<body>
-    <table>
-        
-        <tr>
-            <td>
-                <!-- BEGIN: Kanbas Navigation -->
-                <div class="kanbas-navigation">
+    <head>
+        <title>Grades</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td valign= "top">
+                    <!-- BEGIN: Kanbas Navigation -->
+                    <div class="kanbas-navigation">
+                        <ul>
+                            <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
+                            <li><a href="/Kanbas/Courses/Home/screen.html">Dashboard</a></li>
+                            <li><a href="/Kanbas/Courses/Assignments/screen.html">Courses</a></li>
+                            <li><a href="#">Calendar</a></li>
+                            <li><a href="#">Inbox</a></li>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Studio</a></li>
+                            <li><a href="#">Commons</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                    <!-- END: Kanbas Navigation -->
+                </td>
+                <td valign= "top">
                     <ul>
-                        <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                        <li><a href="/Kanbas/Courses/Home/screen.html">Dashboard</a></li>
-                        <li><a href="/Kanbas/Courses/Assignments/screen.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
+                        <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                        <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                        <li><a href="/Kanbas/Courses/Piazza/index.html">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="#">Settings</a></li>
                     </ul>
-                </div>
-                <!-- END: Kanbas Navigation -->
-            </td>
-            <td>
-                <ul>
-                    <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-                    <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-                    <li><a href="/Kanbas/Courses/Piazza/index.html">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="#">Settings</a></li>
-                </ul>
-            </td>
-            <td>
-                <table>
-                    <tbody>
-<!-- BEGIN: Grades -->
-<div class="grades">
-    <select>
-        <option value="gradebook">Gradebook</option>
-    </select>
-    <button>Import</button>
-    <select>
-        <option value="export">Export</option>
-    </select>
-    <button>Configure</button>
-</div>
+                </td>
+                <td valign= "top">
+                    <table>
+                        <tbody>
+        <!-- BEGIN: Grades -->
+        <div class="grades">
+            <select>
+                <option value="gradebook">Gradebook</option>
+            </select>
+            <button>Import</button>
+            <select>
+                <option value="export">Export</option>
+            </select>
+            <button>Configure</button>
+        </div>
 
-<h2>Student Names</h2>
-<input type="text" placeholder="Search Students">
+        <h2>Student Names</h2>
+        <input type="text" placeholder="Search Students">
 
-<h2>Assignment Names</h2>
-<input type="text" placeholder="Search Assignments">
-</br>
-</br>
-    <button>Apply Filters</button>
-</br>
-</br>
-<table border = "3">
-    <thead>
-        <tr>
-            <th>Student Name</th>
-            <th>A1 SETUP</br>Out of 100</th>
-            <th>A2 HTML</br>Out of 100</th>
-            <th>A3 CSS</br>Out of 100</th>
-            <th>A4 BOOTSTRAP</br>Out of 100</th>
-            <th>A5 JAVASCRIPT</br>Out of 100</th>
-            <th>A6 REACT</br>Out of 100</th>
-            <th>A7 REDUX</br>Out of 100</th>
-            <th>A8 NODE</br>Out of 100</th>
-            <th>A9 MONGO</br>Out of 100</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Student 1</td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="85" size="3"></td>
-            <td><input type="text" value="95" size="3"></td>
-            <td><input type="text" value="80" size="3"></td>
-            <td><input type="text" value="92" size="3"></td>
-            <td><input type="text" value="88" size="3"></td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="85" size="3"></td>
-            <td><input type="text" value="95" size="3"></td>
-        </tr>
-        
-        <tr>
-            <td>Student 2</td>
-            <td><input type="text" value="87" size="3"></td>
-            <td><input type="text" value="92" size="3"></td>
-            <td><input type="text" value="83" size="3"></td>
-            <td><input type="text" value="89" size="3"></td>
-            <td><input type="text" value="91" size="3"></td>
-            <td><input type="text" value="84" size="3"></td>
-            <td><input type="text" value="88" size="3"></td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="86" size="3"></td>
-        </tr>
-        <tr>
-            <td>Student 3</td>
-            <td><input type="text" value="82" size="3"></td>
-            <td><input type="text" value="88" size="3"></td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="85" size="3"></td>
-            <td><input type="text" value="89" size="3"></td>
-            <td><input type="text" value="87" size="3"></td>
-            <td><input type="text" value="91" size="3"></td>
-            <td><input type="text" value="83" size="3"></td>
-            <td><input type="text" value="92" size="3"></td>
-        </tr>
-        <tr>
-            <td>Student 4</td>
-            <td><input type="text" value="89" size="3"></td>
-            <td><input type="text" value="84" size="3"></td>
-            <td><input type="text" value="91" size="3"></td>
-            <td><input type="text" value="87" size="3"></td>
-            <td><input type="text" value="83" size="3"></td>
-            <td><input type="text" value="92" size="3"></td>
-            <td><input type="text" value="86" size="3"></td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="88" size="3"></td>
-        </tr>
-        <tr>
-            <td>Student 5</td>
-            <td><input type="text" value="85" size="3"></td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="88" size="3"></td>
-            <td><input type="text" value="92" size="3"></td>
-            <td><input type="text" value="86" size="3"></td>
-            <td><input type="text" value="89" size="3"></td>
-            <td><input type="text" value="91" size="3"></td>
-            <td><input type="text" value="84" size="3"></td>
-            <td><input type="text" value="87" size="3"></td>
-        </tr>
-        <tr>
-            <td>Student 6</td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="85" size="3"></td>
-            <td><input type="text" value="89" size="3"></td>
-            <td><input type="text" value="84" size="3"></td>
-            <td><input type="text" value="91" size="3"></td>
-            <td><input type="text" value="87" size="3"></td>
-            <td><input type="text" value="92" size="3"></td>
-            <td><input type="text" value="86" size="3"></td>
-            <td><input type="text" value="88" size="3"></td>
-        </tr>
-        <tr>
-            <td>Student 7</td>
-            <td><input type="text" value="88" size="3"></td>
-            <td><input type="text" value="92" size="3"></td>
-            <td><input type="text" value="86" size="3"></td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="85" size="3"></td>
-            <td><input type="text" value="89" size="3"></td>
-            <td><input type="text" value="91" size="3"></td>
-            <td><input type="text" value="83" size="3"></td>
-            <td><input type="text" value="87" size="3"></td>
-        </tr>
-        <tr>
-            <td>Student 8</td>
-            <td><input type="text" value="91" size="3"></td>
-            <td><input type="text" value="84" size="3"></td>
-            <td><input type="text" value="88" size="3"></td>
-            <td><input type="text" value="92" size="3"></td>
-            <td><input type="text" value="86" size="3"></td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="87" size="3"></td>
-            <td><input type="text" value="89" size="3"></td>
-            <td><input type="text" value="85" size="3"></td>
-        </tr>
-        <tr>
-            <td>Student 9</td>
-            <td><input type="text" value="86" size="3"></td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="85" size="3"></td>
-            <td><input type="text" value="89" size="3"></td>
-            <td><input type="text" value="91" size="3"></td>
-            <td><input type="text" value="84" size="3"></td>
-            <td><input type="text" value="88" size="3"></td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="87" size="3"></td>
-        </tr>
-        <tr>
-            <td>Student 10</td>
-            <td><input type="text" value="83" size="3"></td>
-            <td><input type="text" value="87" size="3"></td>
-            <td><input type="text" value="91" size="3"></td>
-            <td><input type="text" value="85" size="3"></td>
-            <td><input type="text" value="89" size="3"></td>
-            <td><input type="text" value="92" size="3"></td>
-            <td><input type="text" value="86" size="3"></td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="84" size="3"></td>
-        </tr>
-        <tr>
-            <td>Student 11</td>
-            <td><input type="text" value="89" size="3"></td>
-            <td><input type="text" value="85" size="3"></td>
-            <td><input type="text" value="90" size="3"></td>
-            <td><input type="text" value="88" size="3"></td>
-            <td><input type="text" value="84" size="3"></td>
-            <td><input type="text" value="91" size="3"></td>
-            <td><input type="text" value="87" size="3"></td>
-            <td><input type="text" value="92" size="3"></td>
-            <td><input type="text" value="86" size="3"></td>
-        </tr>
-        <!-- END: Randomized Student Names and Grades -->
-    </tbody>
-</table>
-        <!-- END: Randomized Student Names and Grades -->
-    </tbody>
-
-</table>
-</body>
+        <h2>Assignment Names</h2>
+        <input type="text" placeholder="Search Assignments">
+        </br>
+        </br>
+            <button>Apply Filters</button>
+        </br>
+        </br>
+        <table border = "3">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>A1 SETUP</br>Out of 100</th>
+                    <th>A2 HTML</br>Out of 100</th>
+                    <th>A3 CSS</br>Out of 100</th>
+                    <th>A4 BOOTSTRAP</br>Out of 100</th>
+                    <th>A5 JAVASCRIPT</br>Out of 100</th>
+                    <th>A6 REACT</br>Out of 100</th>
+                    <th>A7 REDUX</br>Out of 100</th>
+                    <th>A8 NODE</br>Out of 100</th>
+                    <th>A9 MONGO</br>Out of 100</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Student 1</td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="85" size="3"></td>
+                    <td><input type="text" value="95" size="3"></td>
+                    <td><input type="text" value="80" size="3"></td>
+                    <td><input type="text" value="92" size="3"></td>
+                    <td><input type="text" value="88" size="3"></td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="85" size="3"></td>
+                    <td><input type="text" value="95" size="3"></td>
+                </tr>
+                
+                <tr>
+                    <td>Student 2</td>
+                    <td><input type="text" value="87" size="3"></td>
+                    <td><input type="text" value="92" size="3"></td>
+                    <td><input type="text" value="83" size="3"></td>
+                    <td><input type="text" value="89" size="3"></td>
+                    <td><input type="text" value="91" size="3"></td>
+                    <td><input type="text" value="84" size="3"></td>
+                    <td><input type="text" value="88" size="3"></td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="86" size="3"></td>
+                </tr>
+                <tr>
+                    <td>Student 3</td>
+                    <td><input type="text" value="82" size="3"></td>
+                    <td><input type="text" value="88" size="3"></td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="85" size="3"></td>
+                    <td><input type="text" value="89" size="3"></td>
+                    <td><input type="text" value="87" size="3"></td>
+                    <td><input type="text" value="91" size="3"></td>
+                    <td><input type="text" value="83" size="3"></td>
+                    <td><input type="text" value="92" size="3"></td>
+                </tr>
+                <tr>
+                    <td>Student 4</td>
+                    <td><input type="text" value="89" size="3"></td>
+                    <td><input type="text" value="84" size="3"></td>
+                    <td><input type="text" value="91" size="3"></td>
+                    <td><input type="text" value="87" size="3"></td>
+                    <td><input type="text" value="83" size="3"></td>
+                    <td><input type="text" value="92" size="3"></td>
+                    <td><input type="text" value="86" size="3"></td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="88" size="3"></td>
+                </tr>
+                <tr>
+                    <td>Student 5</td>
+                    <td><input type="text" value="85" size="3"></td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="88" size="3"></td>
+                    <td><input type="text" value="92" size="3"></td>
+                    <td><input type="text" value="86" size="3"></td>
+                    <td><input type="text" value="89" size="3"></td>
+                    <td><input type="text" value="91" size="3"></td>
+                    <td><input type="text" value="84" size="3"></td>
+                    <td><input type="text" value="87" size="3"></td>
+                </tr>
+                <tr>
+                    <td>Student 6</td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="85" size="3"></td>
+                    <td><input type="text" value="89" size="3"></td>
+                    <td><input type="text" value="84" size="3"></td>
+                    <td><input type="text" value="91" size="3"></td>
+                    <td><input type="text" value="87" size="3"></td>
+                    <td><input type="text" value="92" size="3"></td>
+                    <td><input type="text" value="86" size="3"></td>
+                    <td><input type="text" value="88" size="3"></td>
+                </tr>
+                <tr>
+                    <td>Student 7</td>
+                    <td><input type="text" value="88" size="3"></td>
+                    <td><input type="text" value="92" size="3"></td>
+                    <td><input type="text" value="86" size="3"></td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="85" size="3"></td>
+                    <td><input type="text" value="89" size="3"></td>
+                    <td><input type="text" value="91" size="3"></td>
+                    <td><input type="text" value="83" size="3"></td>
+                    <td><input type="text" value="87" size="3"></td>
+                </tr>
+                <tr>
+                    <td>Student 8</td>
+                    <td><input type="text" value="91" size="3"></td>
+                    <td><input type="text" value="84" size="3"></td>
+                    <td><input type="text" value="88" size="3"></td>
+                    <td><input type="text" value="92" size="3"></td>
+                    <td><input type="text" value="86" size="3"></td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="87" size="3"></td>
+                    <td><input type="text" value="89" size="3"></td>
+                    <td><input type="text" value="85" size="3"></td>
+                </tr>
+                <tr>
+                    <td>Student 9</td>
+                    <td><input type="text" value="86" size="3"></td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="85" size="3"></td>
+                    <td><input type="text" value="89" size="3"></td>
+                    <td><input type="text" value="91" size="3"></td>
+                    <td><input type="text" value="84" size="3"></td>
+                    <td><input type="text" value="88" size="3"></td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="87" size="3"></td>
+                </tr>
+                <tr>
+                    <td>Student 10</td>
+                    <td><input type="text" value="83" size="3"></td>
+                    <td><input type="text" value="87" size="3"></td>
+                    <td><input type="text" value="91" size="3"></td>
+                    <td><input type="text" value="85" size="3"></td>
+                    <td><input type="text" value="89" size="3"></td>
+                    <td><input type="text" value="92" size="3"></td>
+                    <td><input type="text" value="86" size="3"></td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="84" size="3"></td>
+                </tr>
+                <tr>
+                    <td>Student 11</td>
+                    <td><input type="text" value="89" size="3"></td>
+                    <td><input type="text" value="85" size="3"></td>
+                    <td><input type="text" value="90" size="3"></td>
+                    <td><input type="text" value="88" size="3"></td>
+                    <td><input type="text" value="84" size="3"></td>
+                    <td><input type="text" value="91" size="3"></td>
+                    <td><input type="text" value="87" size="3"></td>
+                    <td><input type="text" value="92" size="3"></td>
+                    <td><input type="text" value="86" size="3"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </tbody>
+        </table>
+    </body>
 </html>
