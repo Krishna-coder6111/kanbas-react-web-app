@@ -24,10 +24,23 @@
 .wd-kanbas-navigation a {
     color: white;
     text-decoration: none;
+    display: block; 
+    padding: 5px 0;
 }
 
 .wd-kanbas-navigation a i {
     color: red;
     font-size: 2em;
-    margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px; 
 }
+
+.wd-kanbas-navigation li.account-icon a i {
+    color: white;
+}
+
+.wd-kanbas-navigation li.account-icon.wd-active a i {
+    color: grey;
+}
+
+
