@@ -8,9 +8,9 @@ import AssignmentEditor from "./Assignments/Editor";
 
 import coursesData from "../../Kanbas/Database"; // Renamed to avoid conflict
 
-function Courses() {
+function Courses({courses}: {courses: any[];}) {
   const { courseId } = useParams();
-  const course = coursesData.courses.find(
+  const course = courses.find(
     (course => course._id === courseId)
   );
   return (
