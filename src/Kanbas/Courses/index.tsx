@@ -1,37 +1,33 @@
-import { Navigate, Route, Routes, useParams } from "react-router-dom";
-import { HiMiniBars3 } from "react-icons/hi2";
-import CourseNavigation from "../Courses/Navigation";
-import Modules from "./Modules";
-import Home from "./Home";
-import Assignments from "./Assignments";
-import AssignmentEditor from "./Assignments/Editor";
+import React, { useState, useEffect } from "react";
+import { useLocation, useParams } from "react-router";
+// import courses from "../Database/courses.json";
+// import modules from "../Database/modules.json";
+import * as client from "./client";
 
-import coursesData from "../../Kanbas/Database"; // Renamed to avoid conflict
-
-function Courses({courses}: {courses: any[];}) {
-  const { courseId } = useParams();
-  const course = courses.find(
-    (course => course._id === courseId)
-  );
+function Courses() {
+  const { pathname } = useLocation();
+  const params = useParams();
+  const { courseId } = params;
+  const [course, setCourse] = useState({ name: "" }); //= courses.find((course) => course._id === courseId);
+  const [modulesForThisCourse, setModulesForThisCourse] = useState([]);
+  const fetchCourse = async () => {
+    const course = await client.fetchCourseById(courseId);
+    setCourse(course);
+  };
+  const fetchModulesForThisCourse = async () => {
+    const modules = await client.fetchModulesForCourse(courseId);
+    setModulesForThisCourse(modules);
+  };
+  useEffect(() => {
+    fetchCourse();
+    fetchModulesForThisCourse();
+  }, [courseId]);
   return (
     <div>
-      <h1><HiMiniBars3 /> Course {course?.name}</h1>
-      <CourseNavigation />
-      <div>
-      <div
-          className="overflow-y-scroll position-fixed bottom-0 end-0"
-          style={{ left: "320px", top: "50px" }} >
-
-        <Routes>
-            <Route path="/" element={<Navigate to="Home" />} />
-            <Route path="Home" element={<Home />} />
-            <Route path="Modules" element={<Modules />} />
-            <Route path="Assignments" element={<Assignments />} />
-            <Route path="Assignments/:assignmentId" element={<AssignmentEditor />} />
-            <Route path="Grades" element={<h1>Grades</h1>} />
-        </Routes>
-      </div>
-    </div>
+      <h1>Courses Component {course?.name}</h1>
+      <pre>
+        <code>{JSON.stringify(modulesForThisCourse, null, 2)}</code>
+      </pre>
     </div>
   );
 }
