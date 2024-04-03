@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Assignments</title>
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Kanbas/styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <script src="https://kit.fontawesome.com/2eddb02c39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <table>
+        
+        <tr>
+            <td valign= "top">
+                <!-- BEGIN: Kanbas Navigation -->
+                <div class="kanbas-navigation">
+                    <ul class = "wd-kanbas-navigation">
+                        <li><a href="http://northeastern.edu"><i class="fa-sharp fa-solid fa-n"></i></a></li>
+                        <li class="account-icon"><a href="/Kanbas/Account/Profile/screen.html">
+                            <i class="fa-regular fa-user-circle"></i>Account</a></li>
+                        <li><a href="/Kanbas/Dashboard/screen.html">
+                            <i class="fa fa-tachometer"></i>Dashboard</a></li>
+                        <li class = "wd-active"><a href="/Kanbas/Courses/Assignments/screen.html">
+                            <i class="fa-solid fa-book"></i>Courses</a></li>
+                        <li><a href="#">
+                            <i class="fa fa-calendar"></i>Calendar</a></li>
+                        <li><a href="#">
+                            <i class="fa fa-inbox"></i> Inbox</a></li>
+                        <li><a href="#">
+                            <i class="fa fa-clock"></i>History</a></li>
+                        <li><a href="#">
+                            <i class="fa fa-display"></i>Studio</a></li>
+                        <li><a href="#">
+                            <i class="fa fa-grip"></i>Commons</a></li>
+                        <li><a href="#">
+                            <i class="fa fa-circle-question"></i><br/>Help</a></li>
+                        </ul>
+                </div>
+            </td>
+            <td valign= "top">
+                <ul class = "wd-navigation">
+                    <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                    <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                    <li><a href="/Kanbas/Courses/Piazza/index.html">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li class="wd-active"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </td>
+            <td valign= "top">
+                <table>
+                    <tbody>
+                        <select>
+                            <option value="speed-grader">Speed Grader</option>
+                            <option value="edit">Edit</option>
+                            <option value="duplicate">Duplicate</option>
+                            <option value="delete">Delete</option>
+                            <option value="move-to">Move to...</option>
+                            <option value="send-to">Send to...</option>
+                            <option value="copy-to">Copy to...</option>
+                            <option value="share-to-commons">Share to Commons</option>
+                        </select>                        
+                        <h1>Assignment Name</h1>
+
+                        <form>
+                        
+                            <input type="text" value="A1 - ENV + HTML">
+                            </br>
+                            </br>
+                            <input type="text" value="This is the assignment description.">
+                            </br>
+                            </br>
+                            
+                            <label for="points">Points:</label>
+                            <input type="text" id="points" size="4" value="100">
+                            </br>
+                            </br>
+                            <!-- BEGIN: Assignment Group dropdown -->
+                            <label for="assignment-group">Assignment Group:</label>
+                            <select id="assignment-group">
+                                <option value="ASSIGNMENTS">ASSIGNMENTS</option>
+                            </select>
+                            </br>
+                            </br>
+                            <label for="display-as">Display as</label>
+                            <select name="Display as" id="display-as">
+                                <option value="Percentage">Percentage</option>
+                            </select>
+                            
+                            </br>
+                            </br>
+                            <label for="submission-type">Submission Type</label>
+                            <select id="submission-type">
+                                <option value="Online">Online</option>
+                            </select>
+                            </br>
+                            <br/>
+                            
+                            <!-- BEGIN: Online Entry Options checkboxes -->
+                            <label for="online-entry-options">Online Entry Options</label><br/>
+                            <input type="checkbox" id="text-entry">
+                            <label for="text-entry">Text Entry</label><br/>
+                            <input type="checkbox" id="website-url">
+                            <label for="website-url">Website URL</label><br/>
+                            <input type="checkbox" id="media-recordings">
+                            <label for="media-recordings">Media Recordings</label><br/>
+                            <input type="checkbox" id="student-annotation">
+                            <label for="student-annotation">Student Annotation</label><br/>
+                            <input type="checkbox" id="file-uploads">
+                            <label for="file-uploads">File Uploads</label><br/>
+                            
+                            <!-- END: Online Entry Options checkboxes -->
+                            <br/><br/>
+                            <label for="assign-to">Assign <br/>Assign to</label>
+                            <input type="text" id = "assign-to" value="Everyone">
+                            
+                            <br/><br/>
+                            <label for="due-date">Due:</label>
+                            <input type="date" id="due-date" value="2021-01-01">
+                            
+                            <br/><br/>
+                            <label for="available-from">Available from:</label>
+                            <input type="date" id="available-from" value="2021-01-01">
+                            
+                            <br/><br/>
+                            <label for="until">Until:</label>
+                            <input type="date" id="until" value="2021-01-01">
+                            
+                            <br/><br/>
+                            <form action="/Kanbas/Courses/Assignments/screen.html"><button type="submit">Cancel</button></form>
+                            <form action="/Kanbas/Courses/Assignments/screen.html"><button type="submit">Save</button></form>
+                        </form>                  
+                        <!-- pressing the cancel or save button will take you to the Assignments screen, 
+                            "Implement checkboxes for 'Online Entry Options', 'Group Assignments', 'Peer Reviews'." what are group assignments and peer reviews. -->
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
