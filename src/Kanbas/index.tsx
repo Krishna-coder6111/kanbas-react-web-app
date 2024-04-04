@@ -16,7 +16,7 @@ function Kanbas() {
     _id: "1234", name: "New Course", number: "New Number",
     startDate: "2023-09-10", endDate: "2023-12-15",
   });
-  const COURSES_API = "https://kanbas-node-server-app-ee6d.onrender.com/api/courses";
+  const COURSES_API = `${API_BASE}/api/courses`;
   const addNewCourse = async () => {
     const response = await axios.post(COURSES_API, course);
     setCourses([ ...courses, response.data ]);
