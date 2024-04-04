@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+const API_BASE = process.env.REACT_APP_API_BASE;
+
 function WorkingWithObjects() {
     const [assignment, setAssignment] = useState({ 
         id: 1,
@@ -17,9 +19,9 @@ function WorkingWithObjects() {
         course: "CS4550",
     });
 
-    const ASSIGNMENT_URL = "http://localhost:4000/a5/assignment";
+    const ASSIGNMENT_URL = `${API_BASE}/a5/assignment`;
 
-    const MODULE_URL = "http://localhost:4000/a5/module";
+    const MODULE_URL = `${API_BASE}/a5/module`;
     
     const fetchAssignment = async () => {
         const response = await axios.get(`${ASSIGNMENT_URL}`);

@@ -4,10 +4,12 @@ const axiosWithCredentials = axios.create({
   withCredentials: true,
 });
 
+const API_BASE = process.env.REACT_APP_API_BASE;
+
 // app.post("/api/users/register", register);
 export const register = async (user: any) => {
   const response = await axiosWithCredentials.post(
-    "http://localhost:4000/api/users/register",
+    `${API_BASE}/api/users/register`,
     user
   );
   return response.data;
@@ -16,7 +18,7 @@ export const register = async (user: any) => {
 //   app.post("/api/users/login", login);
 export const login = async (user: any) => {
   const response = await axiosWithCredentials.post(
-    "http://localhost:4000/api/users/login",
+    `${API_BASE}/api/users/login`,
     user
   );
   return response.data;
@@ -24,14 +26,14 @@ export const login = async (user: any) => {
 //   app.post("/api/users/logout", logout);
 export const logout = async () => {
   const response = await axiosWithCredentials.post(
-    "http://localhost:4000/api/users/logout"
+    `${API_BASE}/api/users/logout`
   );
   return response.data;
 };
 //   app.get("/api/users/profile", profile);
 export const profile = async () => {
   const response = await axiosWithCredentials.get(
-    "http://localhost:4000/api/users/profile"
+    `${API_BASE}/api/users/profile``
   );
   return response.data;
 };

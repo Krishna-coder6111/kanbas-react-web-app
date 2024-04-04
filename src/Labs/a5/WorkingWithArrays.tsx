@@ -10,8 +10,10 @@ interface Todo {
   completed: boolean;
 }
 
+const API_BASE = process.env.REACT_APP_API_BASE;
+
 function WorkingWithArrays() {
-    const API = "http://localhost:4000/a5/todos";
+    const API = `${API_BASE}/a5/todos`;
 
     const [todo, setTodo] = useState<Todo>({
       id:1, 
