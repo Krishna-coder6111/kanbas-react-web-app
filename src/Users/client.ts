@@ -33,7 +33,7 @@ export const logout = async () => {
 //   app.get("/api/users/profile", profile);
 export const profile = async () => {
   const response = await axiosWithCredentials.get(
-    `${API_BASE}/api/users/profile``
+    `${API_BASE}/api/users/profile`
   );
   return response.data;
 };
