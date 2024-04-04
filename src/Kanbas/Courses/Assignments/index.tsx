@@ -20,7 +20,7 @@ function Assignments() {
             </span>
           </div>
           <ul className="list-group">
-            {assignmentList.map((assignment) => (
+            {assignmentList.map((assignment: { _id: any; title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; }) => (
               <li className="list-group-item">
                 <FaEllipsisV className="me-2" />
                 <Link
