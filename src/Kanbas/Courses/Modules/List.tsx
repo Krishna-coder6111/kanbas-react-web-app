@@ -1,7 +1,7 @@
 import "./index.css";
 import { useParams } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
-import React, { useState, useEffect } from "react";
+import { useEffect } from "react";
 import {
   addModule,
   deleteModule,
@@ -32,7 +32,7 @@ function ModuleList() {
     });
   };
   const handleUpdateModule = async () => {
-    const status = await client.updateModule(module);
+    await client.updateModule(module);
     dispatch(updateModule(module));
   };
 
@@ -41,7 +41,7 @@ function ModuleList() {
       .then((modules) =>
         dispatch(setModules(modules))
     );
-  }, [courseId]);
+  }, [courseId, dispatch]);
 
   return (
     <ul className="list-group">
