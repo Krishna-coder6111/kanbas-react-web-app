@@ -10,7 +10,6 @@ const ReduxExamples = () => {
             <HelloRedux/>
             <CounterRedux/>
             <AddRedux/>
-            <TodoForm/>
         </div>
     );
 };

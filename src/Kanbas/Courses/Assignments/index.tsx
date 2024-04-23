@@ -9,7 +9,16 @@ function Assignments() {
     (assignment: { course: string | undefined; }) => assignment.course === courseId);
   return (
     <>
-      {/* {<!-- Add buttons and other fields here -->} */}
+      {<select id="assignment">
+          <option selected value="Edit">Edit</option>
+          <option value="SpeedGrader">Speed Grader</option>
+          <option value="Duplicate">Duplicate</option>
+          <option value="Delete">Delete</option>
+          <option value="MoveTo">Move To...</option>
+          <option value="SendTo">Send To...</option>
+          <option value="CopyTo">Copy To...</option>
+          <option value="ShareToCommons">Share To Commons</option>
+        </select>}
       <ul className="list-group wd-modules">
         <li className="list-group-item">
           <div>

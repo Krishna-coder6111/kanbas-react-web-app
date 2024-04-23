@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import "./index.css";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import {
   addModule,
