@@ -31,3 +31,49 @@
   margin-bottom: 20px;
 }
 
+.list-group-item {
+  border: none;
+  border-left: 2px solid green;
+  border-radius: 0px;
+  padding: 5px;
+  margin: 0px;
+}
+
+.list-item:hover {
+  background-color: #42bdff7f;
+}
+
+.buttons {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.inline-div {
+  display: inline-block;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+
+.content > div {
+  flex: 1;
+}
+
+.right_button {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.span_side {
+  display:flex;
+  align-items: center;
+}
