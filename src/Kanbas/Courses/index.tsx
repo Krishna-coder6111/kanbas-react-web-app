@@ -1,4 +1,4 @@
-import { Link, Navigate, Route, Routes, useParams } from "react-router-dom";
+import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import { HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "../Courses/Navigation";
 import Modules from "./Modules";
@@ -6,27 +6,13 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
 
-import courses from "../../Kanbas/Database"; // Renamed to avoid conflict
-import { useState, useEffect } from "react";
-import axios from "axios";
+import coursesData from "../../Kanbas/Database"; // Renamed to avoid conflict
 
-const API_BASE = process.env.REACT_APP_API_BASE;
-
-function Courses(courses: any) {
+function Courses({courses}: {courses: any[];}) {
   const { courseId } = useParams();
-  const COURSES_API = `${API_BASE}/api/courses`;
-  const [course, setCourse] = useState<any>({ _id: "" });
-  const findCourseById = async (courseId?: string) => {
-    const response = await axios.get(
-      `${COURSES_API}/${courseId}`
-    );
-    setCourse(response.data);
-  };
-
-  useEffect(() => {
-    findCourseById(courseId);
-  }, [courseId]);
-
+  const course = courses.find(
+    (course => course._id === courseId)
+  );
   return (
     <div>
       <h1><HiMiniBars3 /> Course {course?.name}</h1>

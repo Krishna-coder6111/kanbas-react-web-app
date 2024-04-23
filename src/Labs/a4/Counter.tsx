@@ -1,34 +1,20 @@
 import React, { useState } from "react";
-function Counter({
-  count,
-  qwer,
-}: {
-  count: number;
-  qwer: (count: number) => void;
-}) {
+function Counter() {
+  const [count, setCount] = useState(7);
   console.log(count);
   return (
     <div>
-      <h2>Regular Counter: {count}</h2>
+      <h2>Counter: {count}</h2>
       <button
-        onClick={() => {
-          //   count++;
-          qwer(count + 1);
-          console.log(count);
-        }}
-      >
+        onClick={() => { setCount(count + 1); console.log(count); }}>
         Up
       </button>
       <button
-        onClick={() => {
-          //   count--;
-          qwer(count - 1);
-          console.log(count);
-        }}
-      >
+        onClick={() => { setCount(count - 1); console.log(count); }}>
         Down
       </button>
     </div>
   );
 }
 export default Counter;
+

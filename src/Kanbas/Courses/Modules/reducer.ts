@@ -10,17 +10,12 @@ const modulesSlice = createSlice({
   name: "modules",
   initialState,
   reducers: {
-    setModules: (state, action) => {
-      state.modules = action.payload;
-    },
-
     addModule: (state, action) => {
       state.modules = [
         { ...action.payload, _id: new Date().getTime().toString() },
           ...state.modules,
       ];
     },
-
     deleteModule: (state, action) => {
       state.modules = state.modules.filter(
         (module) => module._id !== action.payload
@@ -33,7 +28,7 @@ const modulesSlice = createSlice({
         } else {
           return module;
         }
-      }) as never[];
+      });
     },
     setModule: (state, action) => {
       state.module = action.payload;
@@ -42,5 +37,5 @@ const modulesSlice = createSlice({
 });
 
 export const { addModule, deleteModule,
-  updateModule, setModule , setModules} = modulesSlice.actions;
+  updateModule, setModule } = modulesSlice.actions;
 export default modulesSlice.reducer;
