@@ -1,10 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
-
 const initialState = {
   modules: [],
   module: { name: "New Module 123", description: "New Description" },
 };
-
 const modulesSlice = createSlice({
   name: "modules",
   initialState,
@@ -26,7 +24,6 @@ const modulesSlice = createSlice({
     },
   },
 });
-
 export const { addModule, deleteModule,
   updateModule, setModule, setModules } = modulesSlice.actions;
 export default modulesSlice.reducer;

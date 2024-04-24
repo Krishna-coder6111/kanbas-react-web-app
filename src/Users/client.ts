@@ -4,7 +4,7 @@ const axiosWithCredentials = axios.create({
   withCredentials: true,
 });
 
-export const API_BASE = process.env.REACT_APP_API_BASE;
+export const API_BASE = process.env.REACT_APP_API_BASEA6;
 export const USERS_API = `${API_BASE}/api/users`;
 
 // app.post("/api/users/register", register);
