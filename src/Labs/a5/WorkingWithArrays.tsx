@@ -43,12 +43,12 @@ function WorkingWithArrays() {
         const response = await axios.delete(`${API}/${todo.id}`);
         setTodos(todos.filter((t) => t.id !== todo.id));
       };
-
+    
     const updateTodo = async () => {
         const response = await axios.put(`${API}/${todo.id}`, todo);
         setTodos(todos.map((t) => (t.id === todo.id ? todo : t)));
       };
-
+    
 
 
     useEffect(() => {
@@ -175,11 +175,11 @@ function WorkingWithArrays() {
                             ))}
                         </ul>
 
-
+                       
                     </li>
                 ))}
             </ul>
-
+            
         </div>
     );
 }

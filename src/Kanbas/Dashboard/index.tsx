@@ -10,6 +10,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
   return (
     <div className="p-4">
       <h1>Dashboard</h1>              <hr />
+      
       <h5>Course</h5>
       <input value={course.name} className="form-control"
              onChange={(e) => setCourse({ ...course, name: e.target.value }) } />

@@ -1,12 +1,11 @@
 import React from "react";
 import { FaCheckCircle, FaEllipsisV, FaPlusCircle } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
-import database from "../../Database";
-const { assignments } = database;
+import {assignments} from "../../Database";
 function Assignments() {
   const { courseId } = useParams();
   const assignmentList = assignments.filter(
-    (assignment: { course: string | undefined; }) => assignment.course === courseId);
+    (assignment) => assignment.course === courseId);
   return (
     <>
       {<select id="assignment">
@@ -43,4 +42,3 @@ function Assignments() {
     </>
 );}
 export default Assignments;
-

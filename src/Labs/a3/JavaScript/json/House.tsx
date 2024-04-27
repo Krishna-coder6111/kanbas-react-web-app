@@ -24,6 +24,6 @@ function House() {
       </div>
     );
    }
-export default House;
+   export default House;
    
    

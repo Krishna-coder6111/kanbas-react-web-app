@@ -7,5 +7,4 @@ function HelloWorld() {
    </div>
  );
 }
-
 export default HelloWorld;

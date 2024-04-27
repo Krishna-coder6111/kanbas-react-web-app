@@ -5,7 +5,6 @@ import * as client from "./client";
 import "./Users.css";
 
 export default function Signin() {
-
   const initialUserState: User = {
     _id: "",
     username: "",
@@ -14,19 +13,23 @@ export default function Signin() {
     lastName: "",
     role: "USER"
   };
+
   const [credentials, setCredentials] = useState<User>(initialUserState);
   const navigate = useNavigate();
+
   const handleUsernameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCredentials({ ...credentials, username: e.target.value });
   };
+
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setCredentials({ ...credentials, password: e.target.value });
   };
+
   const signin = async () => {
     await client.signin(credentials);
     navigate("/Kanbas/Account/Profile");
   };
-  
+
   return (
     <div className="sign-container">
       <h1>Signin</h1>

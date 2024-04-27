@@ -1,54 +1,71 @@
-<!DOCTYPE html>
-<head>
-    <title>Edit Profile</title>
-</head>
 <body>
-    <h1>Jose Annunziato</h1>
-    <form>
-        <label for="name">Name:*</label>
-        <input type="text" id="name" value="Jose Annunziato" required>
-
-        <label for="pronouns">Pronouns:</label>
-        <select id="pronouns">
-            <option value="none">None</option>
-            <option value="she">She/Her</option>
-            <option value="he">He/Him</option>
-            <option value="they">They/Them</option>
-            <option value="ze">Ze/Hir</option>
-        </select>
-
-        <label for="title">Title:</label>
-        <input type="text" id="title">
-
-        <h2>Contact</h2>
-        <p>No registered services, you can add some on the <a href="settings.html">settings page</a>.</p>
-        
-        <h2>Contact</h2>
-        <p>No registered services, you can add some on the <a href="settings.html">settings</a> page.</p>
-
-        <h2>Biography</h2>
-        <textarea id="biography">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
-
-        <h2>Links</h2>
-        <ul>
+  <h2>Krishna Singh</h2>
+  <p>
+    <label>Name:*</label>
+    <input type="text" name="name" value="Krishna Singh" />
+    <label>Pronouns:</label>
+    <select>
+      <option selected value="none">None</option>
+      <option value="he/him">He/Him</option>
+      <option value="she/her">She/Her</option>
+      <option value="they/them">They/Them</option>
+    </select>
+  </p>
+  <p>
+    <label>Title:</label>
+    <input type="text" name="title" />
+  </p>
+  <h2>Contact</h2>
+  <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+  <h2>Biography</h2>
+  <label>
+    Student at NEU
+  </label>
+  <form>
+    <textarea name="biography" rows="10" cols="50">Student at NEU</textarea>
+  </form>
+  <h2>
+    Links
+  </h2>
+        <p>
+            <ul>
             <li>
-                <label for="youtube">YouTube</label>
-                <input type="url" id="youtube" value="https://www.youtube.com">
-                <button type="button">Remove</button>
+                <a href="https://www.linkedin.com/in/krishna-singh-820711210/">LinkedIn Links to an external site.</a>
             </li>
         </ul>
-        <button type="button">Add another link</button>
-
-        <div>
-            <form action="#"><button type="submit">Cancel</button></form>
-
-            <form action="/Kanbas/Account/Profile/screen.html"><button type="submit">Save Profile</button></form>
-
-            <form action="/Kanbas/Account/Profile/Edit/screen.html">
-            <button type="submit">Edit Profile</button></form>
-
-            <form action="/Kanbas/Account/Profile/screen.html"><button type="submit">Cancel Editing</button></form>
-        </div>
-    </form>
+    </p>
+    <p>
+        <table>
+            <tbody>
+              <tr>
+                <td>
+                    <h3>
+                        Title:
+                    </h3>
+                    <input type="text" name="title" value="LinkedIn"/>
+                    <p>
+                        <button>Add another link</button>
+                        
+                    </p>
+                    <p>
+                        <button>Cancel</button>
+                        <button href="../screen.html">Save Profile</button>
+                    </p>
+                   <p>
+                    <button>Edit Profile</button>
+                    <button href="../screen.html">Cancel Editing</button>
+                   </p>
+                </td>
+                <td>
+                    <h3>
+                        URL
+                    </h3>
+                    <input type="text" name="url" value="https://www.linkedin.com/in/krishna-singh-820711210/"/> 
+                    <a href ="#">Remove</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          
+    </p>
 </body>
-</html>

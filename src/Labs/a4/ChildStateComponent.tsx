@@ -9,6 +9,6 @@ function ChildStateComponent({ counter, setCounter }:
           <button onClick={() => setCounter(counter - 1)}>
             Decrement</button>
         </div>
-    );
-}
-export default ChildStateComponent;
+      );
+    }
+    export default ChildStateComponent;

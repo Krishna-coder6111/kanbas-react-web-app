@@ -79,7 +79,7 @@ const WorkingWithObjects: React.FC = () => {
       <button onClick={updateModuleDescription}className="btn btn-primary">Update Module Description</button><br />
       <strong>Current Module Name:</strong> {module.name}<br />
       <strong>Current Module Description:</strong> {module.description}<br />
-
+      
       <h3>Assignment Details</h3>
       <input type="text" value={assignment.title} onChange={e => setAssignment({ ...assignment, title: e.target.value })} />
       <button onClick={updateTitle}className="btn btn-primary">Update Title to: {assignment.title}</button><br />

@@ -8,7 +8,7 @@ const Styles = () => {
       "backgroundColor": "lightcoral",
       ...colorBlack,   ...padding10px
     };
-    return(
+    return (
       <div>
         <h2>Styles</h2>
         <div style={{"backgroundColor": "lightyellow",
@@ -19,4 +19,5 @@ const Styles = () => {
       </div>
    );};
 
-export default Styles;
+   export default Styles;
+   
