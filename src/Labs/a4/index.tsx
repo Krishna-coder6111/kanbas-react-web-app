@@ -1,39 +1,42 @@
-import BooleanStateVariables from "./BooleanStateVariables";
+import React from "react";
 import ClickEvent from "./ClickEvent";
-import Counter from "./Counter";
-import EventObject from "./EventObject";
-import ObjectStateVariable from "./ObjectStateVariable";
+import PassingDataOnEvent from "./PassingDataOnEvent";
 import PassingFunctions from "./PassingFunctions";
+import EventObject from "./EventObject";
+import Counter from "./Counter";
+import BooleanStateVariables from "./BooleanStateVariables";
 import StringStateVariables from "./StringStateVariables";
+import DateStateVariable from "./DateStateVariable";
+import ObjectStateVariable from "./ObjectStateVariable";
+import ArrayStateVariable from "./ArrayStateVariable";
+import ParentStateComponent from "./ParentStateComponent";
+import ReduxExamples from "./ReduxExamples";
+import TodoList from "../a3/todos/TodoList";
 
-import { useState } from "react";
-import CounterRedux from "./CounterRedux";
-import TodoList from "./Todo/TodoList";
-import Fibonacci from "./Fibonacci";
-import ObjectComponent from "./Object";
-function Assignment4() {
+const Assignment4 = () => {
   function sayHello() {
     alert("Hello");
+  
   }
 
-  let [count, qwer] = useState(7);
-
-  return (
-    <div>
-      <h2>Assignment 4</h2>
-      <ObjectComponent />
-      <Fibonacci />
-      <TodoList />
-      <ObjectStateVariable count={count} />
-      <StringStateVariables />
-      <BooleanStateVariables />
-      <CounterRedux />
-      <Counter count={count} qwer={qwer} />
-      <EventObject />
-      <PassingFunctions theFunction={sayHello} />
+  return(
+    <>
+      <h1>Assignment 4</h1>
       <ClickEvent />
-    </div>
+      <PassingDataOnEvent />
+      <PassingFunctions theFunction={sayHello} />
+      <EventObject />
+      <Counter />
+      <BooleanStateVariables />
+      <StringStateVariables />
+      <DateStateVariable />
+      <ObjectStateVariable />
+      <ArrayStateVariable />
+      <ParentStateComponent />
+      <ReduxExamples />
+      <TodoList />
+    </>
   );
-}
-
+};
 export default Assignment4;
+

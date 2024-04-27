@@ -1,49 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 .wd-kanbas-navigation {
     background-color: black;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0px;  margin: 0px;
     width: 80px;
-}
-
-.wd-kanbas-navigation li {
+    height: 100vh;
+  }
+  .wd-kanbas-navigation li {
+    padding: 10px;     margin-bottom: 10px;
+    font-size: 0.8em;  text-align: center;
+  }
+  .wd-kanbas-navigation li.wd-active {
+    background-color: white;
+  }
+  .wd-kanbas-navigation li.wd-active a {
+    color: red;
+  }
+  .wd-kanbas-navigation a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: 0.8em;
-}
-
-.wd-kanbas-navigation li.wd-active {
-    background-color: white;
-}
-
-.wd-kanbas-navigation li.wd-active a,
-.wd-kanbas-navigation li.wd-active a .fs-2 {
-    color: red;
-}
-
-.wd-kanbas-navigation a {
     color: white;
     text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px 0;
-}
-
-.wd-kanbas-navigation a .fs-2 {
+  }
+  .wd-kanbas-navigation a i {
     color: red;
     font-size: 2em;
     margin-bottom: 5px;
-}
-
-.wd-kanbas-navigation li:first-child a .fs-2 {
-    color: white;
-}
-
-.wd-kanbas-navigation li.wd-active a .fs-2 {
-    color: red;
-}
+  }
+  .white-text {
+    color: white !important;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  body * {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

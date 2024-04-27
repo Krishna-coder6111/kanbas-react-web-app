@@ -1,120 +1,59 @@
-<html>
-  <head></head>
-  <body>
-    <table>
-      <tbody>
-        <td>
-          <select>
-            <option>Gradboook</option>
-            <option>Change Gradboook View</option>
-            <option>Traditional Gradboook</option>
-            <option>Individual Gradboook</option></select
-          ><br />
-          <label>Student Names</label><br />
-          <input placeholder="Search Students" /><br />
-          <select>
-            <option>Alice Wonderland</option>
-            <option>Charlie Brown</option>
-            <option>Bob The Builder</option>
-          </select>
-        </td>
-        <td>
-          <button>Import</button>
-          <select>
-            <option>Export</option>
-            <option>Export Current Gradebook</option>
-            <option>Export Entire Gradbook</option></select
-          ><br />
-          <label>Assignment Names</label><br />
-          <input placeholder="Search Assignments" /><br />
-          <select>
-            <option>A1</option>
-            <option>A2</option>
-            <option>A3</option>
-            <option>A4</option>
-            <option>Q1</option>
-            <option>Q2</option>
-            <option>Q3</option>
-            <option>Q4</option>
-          </select>
-        </td>
-      </tbody>
-    </table>
-    <button>Apply Filters</button>
-    <table border="1" width="100%">
-      <thead>
+
+  <select id="gradebook">
+    <option selected value="gradebook">Gradebook</option>
+  </select>
+  <button>Import</button>
+  <select id="export">
+    <option selected value="Export">Gradebook</option>
+  </select>
+  <button>Config</button>
+  <h2>Student Names</h2>
+  <form>
+    <input type="text" id="student-name" name="student-name" placeholder="Search Students"/>
+  </form>
+  <h2>Assignment Names</h2>
+  <form>
+    <input type="text" id="assignment-name" name="assignment-name" placeholder="Search Assignments"/>
+  </form>
+  <button>Apply Filters</button>
+  <table width="100%">
+    <thead>
+      <tr>
+        <th>Student Name</th>
+        <th>A1</th>
+        <th>A2</th>
+        <th>A3</th>
+        <th>A4</th>
+      </tr>
+    </thead>
+    <tbody>
         <tr>
-          <th rowspan="2">Student Names</th>
-          <th>A1</th>
-          <th>A2</th>
-          <th>A3</th>
-          <th>A4</th>
-          <th>A5</th>
-          <th>A6</th>
-          <th>Q1</th>
-          <th>Q2</th>
-          <th>Q3</th>
-          <th>Q4</th>
-          <th>Q5</th>
-        </tr>
-        <tr>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-          <th>Out of 100</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Alice Wonderland</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td><input type="number" value="100" /></td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-        </tr>
-        <tr>
-          <td>Charlie Brown</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td><input type="number" value="100" /></td>
-          <td>100</td>
-          <td>100</td>
-        </tr>
-        <tr>
-          <td>Bob Marley</td>
-          <td>100</td>
-          <td><input type="number" value="100" /></td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-          <td>100</td>
-        </tr>
-      </tbody>
-    </table>
-  </body>
-</html>
+            <td>Bob</td>
+            <td><input type="text" id="bob-A1" name="bob-A1" placeholder="15"/></td>
+            <td><input type="text" id="bob-A2" name="bob-A2" placeholder="99"/></td>
+            <td><input type="text" id="bob-A3" name="bob-A3" placeholder="23"/></td>
+            <td><input type="text" id="bob-A4" name="bob-A4" placeholder="0"/></td>
+          </tr>
+          <tr>
+            <td>Joe</td>
+            <td><input type="text" id="joe-A1" name="joe-A1" placeholder="23"/></td>
+            <td><input type="text" id="joe-A2" name="joe-A2" placeholder="10"/></td>
+            <td><input type="text" id="joe-A3" name="joe-A3" placeholder="12"/></td>
+            <td><input type="text" id="joe-A4" name="joe-A4" placeholder="0"/></td>
+          </tr>
+          <tr>
+            <td>Win</td>
+            <td><input type="text" id="win-A1" name="win-A1" placeholder="100"/></td>
+            <td><input type="text" id="win-A2" name="win-A2" placeholder="100"/></td>
+            <td><input type="text" id="win-A3" name="win-A3" placeholder="100"/></td>
+            <td><input type="text" id="win-A4" name="win-A4" placeholder="0"/></td>
+          </tr>
+          <tr>
+            <td>Bruh</td>
+            <td><input type="text" id="bruh-A1" name="bruh-A1" placeholder="0"/></td>
+            <td><input type="text" id="bruh-A2" name="bruh-A2" placeholder="0"/></td>
+            <td><input type="text" id="bruh-A3" name="bruh-A3" placeholder="0"/></td>
+            <td><input type="text" id="bruh-A4" name="bruh-A4" placeholder="0"/></td>
+          </tr>
+    </tbody>
+  </table>

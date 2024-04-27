@@ -1,15 +1,23 @@
 import React from "react";
 import { FaCheckCircle, FaEllipsisV, FaPlusCircle } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
-import database from "../../Database";
-const { assignments } = database;
+import {assignments} from "../../Database";
 function Assignments() {
   const { courseId } = useParams();
   const assignmentList = assignments.filter(
-    (assignment: { course: string | undefined; }) => assignment.course === courseId);
+    (assignment) => assignment.course === courseId);
   return (
     <>
-      {/* {<!-- Add buttons and other fields here -->} */}
+      {<select id="assignment">
+          <option selected value="Edit">Edit</option>
+          <option value="SpeedGrader">Speed Grader</option>
+          <option value="Duplicate">Duplicate</option>
+          <option value="Delete">Delete</option>
+          <option value="MoveTo">Move To...</option>
+          <option value="SendTo">Send To...</option>
+          <option value="CopyTo">Copy To...</option>
+          <option value="ShareToCommons">Share To Commons</option>
+        </select>}
       <ul className="list-group wd-modules">
         <li className="list-group-item">
           <div>
@@ -20,7 +28,7 @@ function Assignments() {
             </span>
           </div>
           <ul className="list-group">
-            {assignmentList.map((assignment: { _id: any; title: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | null | undefined; }) => (
+            {assignmentList.map((assignment) => (
               <li className="list-group-item">
                 <FaEllipsisV className="me-2" />
                 <Link
@@ -34,4 +42,3 @@ function Assignments() {
     </>
 );}
 export default Assignments;
-

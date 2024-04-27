@@ -1,32 +1,52 @@
-import MapFunction from "./arrays/MapFunction";
-import WorkingWithArrays from "./arrays/WorkingWithArrays";
+import FunctionParenthesisAndParameters from "./functions/FunctionParenthesisAndParameters";
 import IfElse from "./conditionals/IfElse";
-import ArrowFunctions from "./functions/ArrowFunctions";
+import TernaryOperator from "./conditionals/TernaryOperator";
+import ArrowFunction from "./functions/ArrowFunction";
 import ES5Functions from "./functions/ES5Functions";
-import House from "./json/House";
-import JsonStringify from "./json/JsonStringify";
-import Spreading from "./json/Spreading";
+import ImplicitReturn from "./functions/ImpliedReturn";
 import BooleanVariables from "./variables/BooleanVariables";
-import VariablesAndConstants from "./variables/VariablesAndConstants";
-import VariableTypes from "./variables/VariableTypes";
+import VariablesAndConstants
+  from "./variables/VariablesAndConstants";
+import WorkingWithArrays from "./array/WorkingWithArrays";
+import ArrayIndexAndLength from "./array/ArrayIndexAndLength";
+import AddingAndRemovingDataToFromArrays from "./array/AddingAndRemovingDataToFromArrays";
+import ForLoops from "./array/ForLoops";
+import MapFunction from "./array/MapFunction";
+import JsonStringify from "./json/JsonStringify";
+import FindFunction from "./array/FindFunction";
+import TemplateLiterals from "./string/TemplateLiterals";
+import House from "./json/House";
+import Spreading from "./json/Spreading";
+import Destructing from "./json/Destructing";
+import FunctionDestructing from "./functions/FunctionDestructing";
 
 function JavaScript() {
-  console.log("Hello, JavaScript!");
-  return (
-    <div>
-      <h1>JavaScript</h1>
-      <Spreading />
-      <House />
-      <JsonStringify />
-      <MapFunction />
-      <WorkingWithArrays />
-      <ArrowFunctions />
-      <ES5Functions />
-      <IfElse />
-      <BooleanVariables />
-      <VariableTypes />
-      <VariablesAndConstants />
-    </div>
-  );
+   console.log('Hello World!');
+   return(
+      <div>
+         <h1>JavaScript</h1>
+         <VariablesAndConstants/>
+         <BooleanVariables/>
+         <IfElse/>
+         <TernaryOperator/>
+         <ES5Functions/>
+         <ArrowFunction/>
+         <ImplicitReturn/>
+         <FunctionParenthesisAndParameters/>
+         <WorkingWithArrays/>
+         <ArrayIndexAndLength/>
+         <AddingAndRemovingDataToFromArrays/>
+         <ForLoops/>
+         <MapFunction/>
+         <JsonStringify/>
+         <FindFunction/>
+         <TemplateLiterals/>
+         <House/>
+         <Spreading/>
+         <Destructing/>
+         <FunctionDestructing/>
+      </div>
+   );
 }
-export default JavaScript;
+
+export default JavaScript
