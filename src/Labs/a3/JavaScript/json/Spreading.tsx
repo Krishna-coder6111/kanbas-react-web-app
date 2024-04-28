@@ -15,8 +15,5 @@ function Spreading() {
         { JSON.stringify(obj2) }         <br />
         { JSON.stringify(obj3) }         <br />
       </div>);
-}
-
-export default Spreading;
-   
-   
+   }
+   export default Spreading;

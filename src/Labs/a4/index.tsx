@@ -1,37 +1,42 @@
 import React from "react";
-import BooleanStateVariables from "./BooleanStateVariables";
 import ClickEvent from "./ClickEvent";
-import Counter from "./Counter";
-import EventObject from "./EventObject";
 import PassingDataOnEvent from "./PassingDataOnEvent";
 import PassingFunctions from "./PassingFunctions";
+import EventObject from "./EventObject";
+import Counter from "./Counter";
+import BooleanStateVariables from "./BooleanStateVariables";
 import StringStateVariables from "./StringStateVariables";
 import DateStateVariable from "./DateStateVariable";
 import ObjectStateVariable from "./ObjectStateVariable";
-import ArrayStateVariable from "./ArrayStateVariables";
+import ArrayStateVariable from "./ArrayStateVariable";
 import ParentStateComponent from "./ParentStateComponent";
 import ReduxExamples from "./ReduxExamples";
-function Assignment4() {
-        function sayHello() {
-                alert("Hello");
-        }
-    return(
-        <>
-            <h1>Assignment 4</h1>
-            <ReduxExamples/>
-            <ClickEvent/>
-            <PassingDataOnEvent/>
-            <PassingFunctions theFunction={sayHello}/>
-            <EventObject/>
-            <Counter/>
-            <BooleanStateVariables/>
-            <StringStateVariables/>
-            <DateStateVariable/>
-            <ObjectStateVariable/>
-            <ArrayStateVariable />
-            <ParentStateComponent/>
-            
-        </>
-    );
-}
+import TodoList from "../a3/todos/TodoList";
+
+const Assignment4 = () => {
+  function sayHello() {
+    alert("Hello");
+  
+  }
+
+  return(
+    <>
+      <h1>Assignment 4</h1>
+      <ClickEvent />
+      <PassingDataOnEvent />
+      <PassingFunctions theFunction={sayHello} />
+      <EventObject />
+      <Counter />
+      <BooleanStateVariables />
+      <StringStateVariables />
+      <DateStateVariable />
+      <ObjectStateVariable />
+      <ArrayStateVariable />
+      <ParentStateComponent />
+      <ReduxExamples />
+      <TodoList />
+    </>
+  );
+};
 export default Assignment4;
+

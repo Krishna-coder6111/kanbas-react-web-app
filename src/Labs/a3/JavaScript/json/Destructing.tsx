@@ -20,7 +20,5 @@ function Destructing() {
         third = {third}
       </div>
     );
-}
-export default Destructing;
-   
-   
+   }
+   export default Destructing;

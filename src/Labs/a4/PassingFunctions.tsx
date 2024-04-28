@@ -8,4 +8,4 @@ function PassingFunctions({ theFunction }: { theFunction: () => void }) {
       </div>
     );
   }
-  export default PassingFunctions;  
+  export default PassingFunctions;

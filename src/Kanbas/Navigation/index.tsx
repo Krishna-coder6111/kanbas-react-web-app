@@ -1,19 +1,22 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation } from 'react-router-dom';
 import "./index.css";
-import { FaTachometerAlt, FaRegUserCircle, FaBook, FaRegCalendarAlt, FaInbox, FaClock, FaPlay, FaCampground, FaQuestionCircle } from "react-icons/fa";
+import { FaUser, FaTachometerAlt, FaBook, FaCalendar, FaInbox, FaHistory, FaTv, FaArrowRight, FaQuestion } from 'react-icons/fa';
+
 function KanbasNavigation() {
   const links = [
-    { label: "Account",   icon: <FaRegUserCircle className="fs-2" />  },
-    { label: "Dashboard", icon: <FaTachometerAlt className="fs-2" />  },
-    { label: "Courses",   icon: <FaBook className="fs-2" />           },
-    { label: "Calendar",  icon: <FaRegCalendarAlt className="fs-2" /> },
-    { label: "Inbox",     icon: <FaInbox className="fs-2" /> },
-    { label: "History",   icon: <FaClock className="fs-2" /> },
-    { label: "Studio",    icon: <FaPlay className="fs-2" /> },
-    { label: "Commons",   icon: <FaCampground className="fs-2" /> },
-    { label: "Help",      icon: <FaQuestionCircle className="fs-2" /> }
+    { label: "Account", icon: <FaUser className="white-text" /> },
+    { label: "Dashboard", icon: <FaTachometerAlt />},
+    { label: "Courses", icon: <FaBook />},
+    { label: "Calendar", icon: <FaCalendar />},
+    { label: "Inbox", icon: <FaInbox className="custom-size-inbox" />},
+    { label: "History", icon: <FaHistory />},
+    { label: "Studio", icon: <FaTv />},
+    { label: "Commons", icon: <FaArrowRight />},
+    { label: "Help", icon: <FaQuestion className="custom-size-question" />}
   ];
+
   const { pathname } = useLocation();
+
   return (
     <ul className="wd-kanbas-navigation">
       {links.map((link, index) => (

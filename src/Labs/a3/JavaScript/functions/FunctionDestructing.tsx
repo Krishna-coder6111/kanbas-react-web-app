@@ -4,7 +4,7 @@ function FunctionDestructing() {
     const subtract = ({ a, b }: { a: number; b: number }) => a - b;
     const difference = subtract({ a: 4, b: 2 });
     return (
-      <>
+      <div>
         <h2>Function Destructing</h2>
         const add = (a, b) =&gt; a + b;<br />
         const sum = add(1, 2);<br />
@@ -12,9 +12,8 @@ function FunctionDestructing() {
         const difference = subtract(&#123; a: 4, b: 2 &#125;);<br/>
         sum = {sum}<br />
         difference = {difference}
-      </>
-   );
-}
-export default FunctionDestructing;
+      </div>
+   );}
+   export default FunctionDestructing;
    
    

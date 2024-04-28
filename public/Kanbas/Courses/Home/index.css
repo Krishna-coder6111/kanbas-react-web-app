@@ -31,3 +31,55 @@
   margin-bottom: 20px;
 }
 
+.list-group-item {
+  border: none;
+  border-left: 2px solid green;
+  border-radius: 0px;
+  padding: 5px;
+  margin: 0px;
+}
+
+.list-item:hover {
+  background-color: #42bdff7f;
+}
+
+.buttons {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.button_spacing {
+  padding: 5px;
+}
+.dropdown-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.dropdown.show .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu .dropdown-item {
+  color: red;
+  font-size: 48px;
+  text-align: center;
+  width: 100%;
+  background-color: white;
+}
+
+.dropdown-menu .dropdown-item i {
+  color: red;
+}
+
+.dropdown-menu .dropdown-item:last-child {
+  border-bottom: none;
+}
