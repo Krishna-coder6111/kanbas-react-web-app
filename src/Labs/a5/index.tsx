@@ -1,7 +1,8 @@
 import React from "react";
-import EncodingParametersInURLs from "./EncodingParametersInURLS";
 import WorkingWithObjects from "./WorkingWithObjects";
 import WorkingWithArrays from "./WorkingWithArrays";
+import EncodingParametersInURLs from "./EncodingParametersInURLs"; // Import the missing component
+
 function Assignment5() {
     return (
       <div>
