@@ -5,9 +5,9 @@ import PathParameters from "./routing/PathParameters";
 import ConditionalOutput from "./ConditionalOutput";
 import Highlight from "./Highlight";
 import Add from "./Add";
-import TodoList from "./todos/TodoList";
 import { useSelector } from "react-redux";
 import { LabState } from "../store";
+import TodoList from "./todos/ToDoList";
 function Assignment3() {
   const { todos } = useSelector((state: LabState) => state.todosReducer);
  return (
